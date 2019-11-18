@@ -1,0 +1,14 @@
+body {
+    background-color: #fae7cc;
+    color: #40403e;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 120%;
+}
+
+p {
+    margin: 0 auto;
+}
+
+a {
+    color: #a11835;
+}
