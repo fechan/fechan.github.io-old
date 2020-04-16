@@ -1,4 +1,6 @@
-let taglines = [
+(function () {
+  "use strict";
+  const taglines = [
     "I like programming, GIS, languages, and games.",
     "Crows are cute!",
     "Best viewed with NCSA Mosaic.",
@@ -9,13 +11,17 @@ let taglines = [
     "Did you get the broom closet ending?",
     "Scrambled eggs in a hot dog bun makes a cheap meal.",
     "Remember to wash your hands and cover your coughs!"
-];
-let visits = parseInt(document.cookie.replace(/(?:(?:^|.*;\s*)visits\s*\=\s*([^;]*).*$)|^.*$/, "$1"));
-if (isNaN(visits)){
+  ];
+  const regex = /(?:(?:^|.*;\s*)visits\s*\=\s*([^;]*).*$)|^.*$/;
+  let visits = parseInt(document.cookie.replace(regex, "$1"));
+  if (isNaN(visits)){
     document.cookie = "visits=0"
     visits = 0;
-} else { 
+  } else { 
     visits++;
     document.cookie = "visits=" + visits;
-}
-window.onload = () => document.getElementById("tagline").innerHTML = taglines[visits % taglines.length];
+  }
+  window.addEventListener('load', () => {
+    document.getElementById("tagline").textContent = taglines[visits % taglines.length];
+  });
+}());

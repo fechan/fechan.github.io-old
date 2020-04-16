@@ -1,0 +1,68 @@
+body {
+  background-color: #fae7cc;
+  color: #40403e;
+  font-family: "Goudy Bookletter 1911", serif;
+  font-size: 1.1em;
+}
+
+h1, h3, p {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+section { 
+  margin-bottom: 2.5vh;
+}
+
+a {
+  color: #a11835;
+}
+
+a:hover {
+  color: #e6234d;
+}
+
+footer p {
+  font-size: 0.8em;
+}
+
+.navbar a, .badge {
+  color: white;
+}
+
+.navbar {
+  margin-bottom: 5vh;
+}
+
+.crow-pic {
+  max-width: 20em;
+}
+
+.badge {
+  font-size: 0.55em;
+  font-family: sans-serif;
+}
+
+.badge-blue {
+  background-color: #3a7fba;
+}
+
+.badge-red {
+  background-color: #bb3c3a;
+}
+
+.badge-yellow {
+  background-color: #bbaa3a;
+}
+
+#container-big {
+  margin-top: 10vh;
+}

@@ -1,35 +1,96 @@
-<html>
-    <head>
-        <title>Frederick's Perch</title>
-        <link href="site.css" rel="stylesheet">
-        <link href="onepage.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
-        <script src="index.js"></script>
-    </head>
-    <body>
-        <div id="onepage-main">
-            <div class="onepage-left">
-                <h1 class="onepage-title">Frederick's Perch</h1>
-                <p id="tagline">I like programming, GIS, languages, and games</p>
-                <p>
-                    <a href="https://github.com/fechan">Github</a> · 
-                    <a href="https://fechan.github.io/blog/">Blog</a> · 
-                    <a href="mailto:fredchan@uw.edu">Email</a>
-                </p>
-                <br>
-                <p><b>Publications</b></p>
-                <p>Visualizing Player Engagement with Virtual Spaces Using GIS - Coming soon to SIGBOVIK 2020!</p>
-                <br>
-                <p><b>Projects</b></p>
-                <p><a href="https://github.com/fechan/civ5map-tools">Civilization 5 Map Tools</a> - Tools for parsing and using civ5map files</p>
-                <p><a href="https://github.com/fechan/MCGS">Minecraft Geological Survey</a> - Tools for mapping and analyzing Minecraft maps</p>
-                <p><a href="https://github.com/fechan/RomuRabble">RomuRabble</a> - Romulan Language (PIC-era) analysis tools and resources</p>
-                <p><a href="https://github.com/fechan/grind-day-bot-2">Grind Day Bot 2</a> - Discord bot for use with my friends</p>
-            </div>
-            <img class="crow-mascot" src="crow_painting_transparent.png" alt="Painting of a crow">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Boilerplate for Bootstrap 4 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+    <!-- Use Google Fonts' Goudy Bookletter 1911 (consider making offline in future) -->
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
+      rel="stylesheet">
+    <!-- End cross-site imports in head -->
+    <script src="copyright-year.js"></script>
+    <script src="taglines.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Frederick's Perch - Home</title>
+  </head>
+  <body>
+    <div id="container-big" class="container align-self-end">
+      <div class="row">
+        <div class="col-md">
+          <header>
+            <h1>Frederick's Perch</h1>
+            <p id="tagline">
+              I like programming, GIS, languages, and games.
+            </p>
+            <nav>
+              <a href="https://github.com/fechan">Github</a> ·
+              <a href="https://fechan.github.io/blog/">Blog</a> ·
+              <a href="mailto:fredchan@uw.edu">Email</a>
+            </nav>
+          </header>
+          <hr>
+          <section>
+            <h2>Publications</h2>
+            <section>
+              <h3>
+                <a href="http://sigbovik.org/2020/proceedings.pdf">
+                  Visualizing Player Engagement with Virtual Spaces using GIS
+                </a>
+              </h3>
+              <p>
+                I put a Minecraft map in real map software and it works!
+                Published in SIGBOVIK 2020 (page 273)
+              </p>
+            </section>
+          </section>
+          <hr>
+          <section>
+            <h2>Projects</h2>
+            <section>
+              <h3>
+                <a href="https://github.com/fechan/civ5map-tools">Civilization V Map Tools</a>
+                <span class="badge badge-blue badge-pill">Python</span>
+                <span class="badge badge-red badge-pill">Kaitai Struct</span>
+              </h3>
+              <p>Tools for using and parsing civ5map Files, including in Quantum GIS</p>
+            </section>
+            <section>
+              <h3>
+                <a href="https://github.com/fechan/MCGS">Minecraft Geological Survey</a>
+                <span class="badge badge-blue badge-pill">Python</span>
+              </h3>
+              <p>Tools for mapping and analyzing Minecraft maps in GIS software</p>
+            </section>
+            <section>
+              <h3>
+                <a href="https://github.com/fechan/RomuRabble">RomuRabble</a>
+                <span class="badge badge-blue badge-pill">Python</span>
+              </h3>
+              <p>Romulan Language (Star Trek: Picard era) analysis tools and resources</p>
+            </section>
+            <section>
+              <h3>
+                <a href="https://github.com/fechan/grind-day-bot-2">Grind Day Bot 2</a>
+                <span class="badge badge-yellow badge-pill">JavaScript</span>
+              </h3>
+              <p>Discord.js bot for use with my friends, who like Star Trek and games.</p>
+            </section>
+          </section>
         </div>
-        <div class="onepage-footer">
-            <p>Copyright &copy; 2019-2020 Frederick Chan. "Crow Resting on Wood Trunk" by Kawanabe Kyōsai (public domain)</p>
-        </div>
-    </body>
+        <aside class="col-sm-auto">
+          <img class="crow-pic" src="crow_transp.webp" alt="Painting of crow on branch">
+        </aside>
+      </div>
+      <footer class="container-fluid text-right">
+        <p>
+          Copyright &copy; <span id="copy-year">2020</span> Frederick Chan.
+          "Crow Resting on Wood Trunk" by Kawanabe Kyōsai (public domain)
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>

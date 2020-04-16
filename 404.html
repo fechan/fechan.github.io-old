@@ -1,22 +1,43 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Frederick's Perch - 404 Not Found</title>
-        <link href="https://fechan.github.io/site.css" rel="stylesheet">
-        <link href="https://fechan.github.io/onepage.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet"> 
-    </head>
-    <body>
-        <div id="onepage-main">
-            <div class="onepage-left">
-                <h1 class="onepage-title">Not Found 404</h1>
-                <br>
-                <p>You tried to access something that isn't here.</p>
-                <a href="https://fechan.github.io/index.html">Return home.</a>
-            </div>
-            <img class="crow-mascot" src="https://fechan.github.io/crow_painting_cutout.png" alt="Painting of a crow">
+  <head>
+    <meta charset="utf-8">
+    <!-- Boilerplate for Bootstrap 4 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+    <!-- Use Google Fonts' Goudy Bookletter 1911 (consider making offline in future) -->
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
+      rel="stylesheet">
+      <script src="copyright-year.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Frederick's Perch - Not found!</title>
+  </head>
+  <body>
+    <div id="container-big" class="container align-self-end">
+      <div class="row">
+        <div class="col-sm">
+          <h1>Not Found 404</h1>
+          <p>
+            Did you know? Crows can be found in a variety of habitats around the world.
+            This isn't one of them.
+          </p>
+          <a href="about.html">Return home.</a>
         </div>
-        <div class="onepage-footer">
-            <p>Copyright &copy; 2019-2020 Frederick Chan. "Crow Resting on Wood Trunk" by Kawanabe Kyōsai (public domain)</p>
-        </div>
-    </body>
+        <aside class="col-sm-auto">
+          <img class="crow-pic" src="crow_cutout_transp.webp"
+            alt="The painting of a crow on a branch, but the crow has been cut out">
+        </aside>
+      </div>
+      <br>
+      <footer class="container-fluid text-right">
+        <p>
+          Copyright &copy; <span id="copy-year">2020</span> Frederick Chan.
+          "Crow Resting on Wood Trunk" by Kawanabe Kyōsai (public domain)
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
