@@ -10,7 +10,8 @@
     "Also check out the 404 page!",
     "Did you get the broom closet ending?",
     "Scrambled eggs in a hot dog bun makes a cheap meal.",
-    "Remember to wash your hands and cover your coughs!"
+    "Remember to wash your hands and cover your coughs!",
+    "Why did the chicken cross the mobius strip?"
   ];
   const regex = /(?:(?:^|.*;\s*)visits\s*\=\s*([^;]*).*$)|^.*$/;
   let visits = parseInt(document.cookie.replace(regex, "$1"));
